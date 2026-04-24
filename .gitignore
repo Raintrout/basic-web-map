@@ -1,0 +1,22 @@
+# Generated build output
+dist/
+
+# Natural Earth source downloads (large zips, reproducible via `make download`)
+data/sources/
+
+# Processed GeoJSON and tiles (reproducible via `make process tiles`)
+data/processed/
+data/tiles/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+*.swp

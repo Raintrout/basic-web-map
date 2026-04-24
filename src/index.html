@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>US States by Census Region</title>
+
+  <!-- MapLibre GL -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/maplibre-gl@4/dist/maplibre-gl.css"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="map"></div>
+
+  <div id="legend">
+    <h3>Census Region</h3>
+    <!-- Items are appended by map.js at runtime so colors stay in sync with regions.js -->
+  </div>
+
+  <div id="tooltip"></div>
+
+  <div id="load-error">
+    data/map.pmtiles not found — run <code>make all</code> to build the tile archive.
+  </div>
+
+  <!-- MapLibre GL -->
+  <script src="https://unpkg.com/maplibre-gl@4/dist/maplibre-gl.js"></script>
+
+  <!-- PMTiles protocol (no tile server required) -->
+  <script src="https://unpkg.com/pmtiles@3/dist/pmtiles.js"></script>
+
+  <!--
+    ES module entry point.
+    Requires an HTTP server — use `make serve` or any static server.
+    Direct file:// access will not work for ES modules.
+  -->
+  <script type="module" src="js/map.js"></script>
+
+</body>
+</html>
