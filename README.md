@@ -2,8 +2,6 @@
 
 Interactive choropleth map of US states colored by [Census Bureau region](https://www2.census.gov/geo/pdfs/maps-data/maps/reference/us_regdiv.pdf). Built entirely from open data — no API key, no tile server.
 
-![US States by Census Region](https://placehold.co/800x400?text=US+States+by+Census+Region)
-
 ## Stack
 
 | Layer | Tool |
